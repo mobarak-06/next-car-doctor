@@ -34,11 +34,10 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow  w-full">
       <div className=" mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo + Name */}
-        <div className="flex items-center space-x-2">
+        <Link href="/">
           <Image src="/assets/logo.svg" width={80} height={80} alt="Logo"  />
           
-        </div>
+        </Link>
 
         {/* Desktop Links */}
         <div className="  text-gray-700 font-medium">
@@ -49,9 +48,9 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4">
           <FiSearch className="text-xl cursor-pointer text-gray-600" />
           <FiShoppingCart className="text-xl cursor-pointer text-gray-600" />
-          <button className="bg-blue-600 text-white px-4 py-1.5 rounded-md hover:bg-blue-700 transition">
+          <Link href="/login" className="bg-blue-600 text-white px-4 py-1.5 rounded-md hover:bg-blue-700 transition">
             Sign In
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}

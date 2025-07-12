@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@plugin "daisyui";
+.layout-bg {
+  background: #1a1919;
+  background: linear-gradient(
+    91deg,
+    rgba(26, 25, 25, 0.89) 23%,
+    rgba(255, 255, 255, 0.55) 66%
+  );
+}
