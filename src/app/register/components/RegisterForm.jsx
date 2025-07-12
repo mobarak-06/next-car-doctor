@@ -1,15 +1,16 @@
 "use client";
+import registerUser from "@/app/actions/auth/registerUser";
 import React from "react";
 
 const RegisterForm = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
 
-    console.log({name, email, password});
+    await registerUser({ name, email, password });
   };
   return (
     <div>
